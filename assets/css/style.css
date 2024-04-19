@@ -1,11 +1,3 @@
----------------------------------------------------------------------------------------------------/**
-* Template Name: FlexStart
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -566,32 +558,32 @@ section {
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# About
+# Introduction
 --------------------------------------------------------------*/
-.about .content {
+.introduction .content {
   background-color: #f6f9ff;
   padding: 40px;
 }
 
-.about h3 {
+.introduction h3 {
   font-size: 14px;
   font-weight: 700;
   color: #4154f1;
   text-transform: uppercase;
 }
 
-.about h2 {
+.introduction h2 {
   font-size: 24px;
   font-weight: 700;
   color: #012970;
 }
 
-.about p {
+.introduction p {
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
 
-.about .btn-read-more {
+.introduction .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
@@ -601,20 +593,20 @@ section {
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
-.about .btn-read-more span {
+.introduction .btn-read-more span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .btn-read-more i {
+.introduction .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
+.introduction .btn-read-more:hover i {
   transform: translateX(5px);
 }
 
@@ -987,7 +979,7 @@ section {
 }
 
 .pricing h3 {
-  font-weight: 700;======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+  font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
 }
@@ -1425,14 +1417,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# about
 --------------------------------------------------------------*/
-.team {
+.about {
   background: #fff;
   padding: 60px 0;
 }
 
-.team .member {
+.about .member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -1441,12 +1433,12 @@ section {
   transition: 0.3s;
 }
 
-.team .member .member-img {
+.about .member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.team .member .member-img:after {
+.about .member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -1458,7 +1450,7 @@ section {
   z-index: 1;
 }
 
-.team .member .social {
+.about .member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1469,7 +1461,7 @@ section {
   z-index: 2;
 }
 
-.team .member .social a {
+.about .member .social a {
   transition: color 0.3s;
   color: rgba(1, 41, 112, 0.5);
   margin: 15px 12px;
@@ -1478,33 +1470,33 @@ section {
   text-align: center;
 }
 
-.team .member .social a:hover {
+.about .member .social a:hover {
   color: rgba(1, 41, 112, 0.8);
 }
 
-.team .member .social i {
+.about .member .social i {
   font-size: 18px;
 }
 
-.team .member .member-info {
+.about .member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.team .member .member-info h4 {
+.about .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #012970;
 }
 
-.team .member .member-info span {
+.about .member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: #aaaaaa;
 }
 
-.team .member .member-info p {
+.about .member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1512,14 +1504,30 @@ section {
   color: #5e5e5e;
 }
 
-.team .member:hover {
+.about .member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
-.team .member:hover .social {
+.about .member:hover .social {
   right: 8px;
   opacity: 1;
+}
+
+/* Define a custom class for 20% width */
+.col-member {
+  width: 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/* Adjust column width for smaller screens */
+@media screen and (max-width: 576px) {
+  .col-member {
+      width: 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1616,41 +1624,41 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Support
 --------------------------------------------------------------*/
-.contact .info-box {
+.support .info-box {
   color: #444444;
   background: #fafbff;
   padding: 30px;
 }
 
-.contact .info-box i {
+.support .info-box i {
   font-size: 38px;
   line-height: 0;
   color: #4154f1;
 }
 
-.contact .info-box h3 {
+.support .info-box h3 {
   font-size: 20px;
   color: #012970;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
 
-.contact .info-box p {
+.support .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.support .php-email-form {
   background: #fafbff;
   padding: 30px;
   height: 100%;
 }
 
-.contact .php-email-form .error-message {
+.support .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1660,7 +1668,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .sent-message {
+.support .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1670,7 +1678,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.support .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
@@ -1678,7 +1686,7 @@ section {
   margin-bottom: 24px;
 }
 
-.contact .php-email-form .loading:before {
+.support .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1690,29 +1698,29 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.support .php-email-form input,
+.support .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.support .php-email-form input:focus,
+.support .php-email-form textarea:focus {
   border-color: #4154f1;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.support .php-email-form input[type=text],
+.support .php-email-form input[type=email] {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.support .php-email-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.support .php-email-form button[type=submit] {
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
@@ -1721,7 +1729,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.support .php-email-form button[type=submit]:hover {
   background: #5969f3;
 }
 
