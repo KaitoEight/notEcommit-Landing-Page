@@ -181,6 +181,7 @@ section {
 
 .header .logo img {
   max-height: 40px;
+  min-width: 200px;
   margin-right: 6px;
 }
 
